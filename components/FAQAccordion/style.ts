@@ -1,7 +1,8 @@
 import { styled } from "../../styles/stitches.config";
 
 export const FAQContainer = styled('section', {
-    position: 'relative',
+    position: 'absolute',
+    top: '150px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',

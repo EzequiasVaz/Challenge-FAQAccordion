@@ -2,18 +2,23 @@ import { styled } from "../../../styles/stitches.config";
 
 export const AccordionOptionContainer = styled('div', {
     display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
     alignItems: 'top',
-    justifyContent: 'space-between',
     width: '280px',
+    maxHeight: '36px',
     cursor: 'pointer',
-    transition: 'all 0.1s ease',
+    '&.active': {
+        transition: 'max-height 0.5s ease-in-out',
+        maxHeight: '200px',
+    },
     '&.active > li': {
-        transition: 'all 0.1s ease',
+        transition: 'all 0.2s ease',
         fontWeight: '$7',
         color: '$VeryDarkUnsaturatedBlue',
     },
     '&.active > svg': {
-        transition: 'all 0.1s ease',
+        transition: 'all 0.2s ease',
         transform: 'rotate(180deg)',
         mt: '5px'
     }
@@ -29,6 +34,8 @@ export const AccordionOptionButton = styled('li', {
 })
 
 export const AccordionOptionIcon = styled('svg', {
+    position: 'absolute',
+    right: '0',
     width: '10px',
     height: '12px',
     backgroundImage: 'url("/icon-arrow-down.svg")',

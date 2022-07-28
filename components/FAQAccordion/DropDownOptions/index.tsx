@@ -9,10 +9,11 @@ export function FAQAccordionOption({ title, content }: IAccordionOption) {
             <AccordionOptionContainer className={isActive ? 'active' : ''} onClick={() => { !isActive ? setIsActive(true) : setIsActive(false) }}>
                 <AccordionOptionButton>{title}</AccordionOptionButton>
                 <AccordionOptionIcon />
+                <AccordionInfoContainer>
+                    {isActive && <OptionInfo>{content}</OptionInfo>}
+                </AccordionInfoContainer>
             </AccordionOptionContainer>
-            <AccordionInfoContainer>
-                {isActive && <OptionInfo>{content}</OptionInfo>}
-            </AccordionInfoContainer>
+
             <DivisorOption />
         </>
     )
