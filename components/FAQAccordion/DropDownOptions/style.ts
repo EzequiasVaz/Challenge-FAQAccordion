@@ -6,22 +6,14 @@ export const AccordionOptionContainer = styled('div', {
     position: 'relative',
     alignItems: 'top',
     width: '280px',
-    maxHeight: '36px',
     cursor: 'pointer',
-    '&.active': {
-        transition: 'max-height 0.5s ease-in-out',
-        maxHeight: '200px',
-    },
+
     '&.active > li': {
-        transition: 'all 0.2s ease',
+        transition: 'color 0.2s ease-in-out',
         fontWeight: '$7',
         color: '$VeryDarkUnsaturatedBlue',
-    },
-    '&.active > svg': {
-        transition: 'all 0.2s ease',
-        transform: 'rotate(180deg)',
-        mt: '5px'
     }
+
 })
 
 export const AccordionOptionButton = styled('li', {
@@ -41,22 +33,23 @@ export const AccordionOptionIcon = styled('svg', {
     backgroundImage: 'url("/icon-arrow-down.svg")',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'bottom',
-    backgroundSize: 'contain'
+    backgroundSize: 'contain',
+    transition: 'transform 0.2s ease-in-out',
+    '&.active': {
+        transform: 'rotate(180deg)',
+        mt: '5px'
+    }
 })
 
-export const AccordionInfoContainer = styled('article', {
-    transition: 'all 0.1s ease',
-    width: '100%',
-    height: 'fit-content',
-})
-
-export const OptionInfo = styled('p', {
-    transition: 'all 0.1s ease',
+export const AccordionInfoContent = styled('article', {
     fontSize: '12px',
     fontWeight: '$4',
     color: '$DarkGrayishBlue',
     maxWidth: '90%',
     mb: '18px',
+    transition: 'max-height 0.5s ease-in-out',
+
+
 })
 
 export const DivisorOption = styled('hr', {

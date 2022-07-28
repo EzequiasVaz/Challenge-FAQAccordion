@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IAccordionOption } from "../../../utils/interfaces/AccordionOption";
-import { AccordionInfoContainer, AccordionOptionButton, AccordionOptionContainer, AccordionOptionIcon, DivisorOption, OptionInfo } from "./style";
+import { AccordionInfoContent, AccordionOptionButton, AccordionOptionContainer, AccordionOptionIcon, DivisorOption } from "./style";
 
 export function FAQAccordionOption({ title, content }: IAccordionOption) {
     const [isActive, setIsActive] = useState(false)
@@ -8,12 +8,9 @@ export function FAQAccordionOption({ title, content }: IAccordionOption) {
         <>
             <AccordionOptionContainer className={isActive ? 'active' : ''} onClick={() => { !isActive ? setIsActive(true) : setIsActive(false) }}>
                 <AccordionOptionButton>{title}</AccordionOptionButton>
-                <AccordionOptionIcon />
-                <AccordionInfoContainer>
-                    {isActive && <OptionInfo>{content}</OptionInfo>}
-                </AccordionInfoContainer>
+                <AccordionOptionIcon className={isActive ? 'active' : ''} />
+                {isActive && <AccordionInfoContent className={isActive ? 'active' : ''}>{content}</AccordionInfoContent>}
             </AccordionOptionContainer>
-
             <DivisorOption />
         </>
     )

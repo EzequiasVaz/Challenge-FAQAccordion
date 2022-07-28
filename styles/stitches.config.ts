@@ -69,7 +69,7 @@ export const { css, globalCss, styled, theme } = createStitches({
         }),
 
         linearGradient: (value: string) => ({
-            backgroundImage: `linear-gradient(${value})`
+            backgroundImage: `linear-gradient(${value})`,
         })
 
     }
