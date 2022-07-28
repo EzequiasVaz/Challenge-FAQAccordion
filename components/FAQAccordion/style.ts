@@ -8,7 +8,6 @@ export const FAQContainer = styled('section', {
     px: '20px',
     paddingTop: '128px',
     paddingBottom: '$4',
-    mt: '100px', //after make accordion, check this again to set a new margin top, of course if needed
     maxWidth: '320px',
     maxHeight: 'fit-content',
     borderRadius: '24px',

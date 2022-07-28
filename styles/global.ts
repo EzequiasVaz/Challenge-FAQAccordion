@@ -7,6 +7,7 @@ export const globalStyles = globalCss({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        linearGradient: '0deg, $SoftBlue 0%, $SoftViolet 100%'
+        linearGradient: '0deg, $SoftBlue 0%, $SoftViolet 100%',
+        paddingTop: '150px'
     }
 })
