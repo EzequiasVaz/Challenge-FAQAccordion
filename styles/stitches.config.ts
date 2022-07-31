@@ -4,6 +4,7 @@ import { createStitches } from '@stitches/react'
 export const { css, globalCss, styled, theme } = createStitches({
     theme: {
         colors: {
+            'Orange': 'hsl(25, 97%, 53%)',
             'White': 'hsl(0, 100%, 100%)',
             'VeryDarkUnsaturatedBlue': 'hsl(238, 29%, 16%)',
             'SoftRed': 'hsl(14, 88%, 65%)',

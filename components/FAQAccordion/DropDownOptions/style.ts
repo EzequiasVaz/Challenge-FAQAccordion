@@ -12,6 +12,10 @@ export const AccordionOptionContainer = styled('div', {
         transition: 'color 0.2s ease-in-out',
         fontWeight: '$7',
         color: '$VeryDarkUnsaturatedBlue',
+    },
+
+    '@desktop': {
+        width: '320px',
     }
 
 })
@@ -23,6 +27,14 @@ export const AccordionOptionButton = styled('li', {
     fontSize: '13px',
     mb: '18px',
     paddingRight: '32px',
+
+    '@desktop': {
+        fontSize: '14px',
+
+        '&:hover': {
+            color: '$Orange',
+        }
+    }
 })
 
 export const AccordionOptionIcon = styled('svg', {
