@@ -116,6 +116,7 @@ export const FAQItems = styled('div', {
         overflowX: 'hidden',
         width: '100%',
         '&::-webkit-scrollbar': {
+            display: 'block',
             width: '5px',
             height: '1px',
             borderRadius: '6px',
