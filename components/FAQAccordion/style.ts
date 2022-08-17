@@ -104,7 +104,7 @@ export const FAQContent = styled('section', {
 
 export const FAQItems = styled('div', {
 
-    height: '270px',
+    height: '300px',
     overflow: 'scroll',
     '&::-webkit-scrollbar': {
         display: 'none',
