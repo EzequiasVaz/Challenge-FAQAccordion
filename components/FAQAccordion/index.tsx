@@ -1,5 +1,5 @@
 import { FAQAccordionOption } from "./DropDownOptions";
-import { BoxIllustration, FAQContainer, FAQContent, HeaderIcon, HeaderIconBackground, IconDiv, TitleFAQ } from "./style";
+import { BoxIllustration, FAQContainer, FAQContent, FAQItems, HeaderIcon, HeaderIconBackground, IconDiv, TitleFAQ } from "./style";
 
 export function FAQAccordion() {
     return (
@@ -16,7 +16,7 @@ export function FAQAccordion() {
 
                 <TitleFAQ>Faq</TitleFAQ>
 
-                <ul>
+                <FAQItems>
                     <FAQAccordionOption
                         title="How many team members can I invite?"
                         content="You can invite up to 2 additional users on the Free plan. There is no limit on
@@ -37,7 +37,7 @@ export function FAQAccordion() {
 
                     <FAQAccordionOption title="Do you provide additional support?"
                         content="Chat and email support is available 24/7. Phone lines are open during normal business hours." />
-                </ul>
+                </FAQItems>
             </FAQContent>
         </FAQContainer>
     )

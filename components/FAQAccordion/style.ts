@@ -1,6 +1,6 @@
 import { styled } from "../../styles/stitches.config";
 
-export const FAQContainer = styled('section', {
+export const FAQContainer = styled('main', {
     position: 'absolute',
     top: '150px',
     display: 'flex',
@@ -13,24 +13,26 @@ export const FAQContainer = styled('section', {
     maxHeight: 'fit-content',
     borderRadius: '24px',
     backgroundColor: '$White',
-
     '@desktop': {
         minWidth: '900px',
         paddingTop: '50px',
         paddingRight: '100px',
+        height: '500px',
+        overflow: 'hidden'
     }
+
 })
 
 export const IconDiv = styled('div', {
     position: 'absolute',
     top: '0',
     left: '0',
-    width: '400px',
     height: '100%',
     zIndex: '0',
 
     '@desktop': {
         overflow: 'hidden',
+        width: '400px',
     }
 })
 
@@ -84,12 +86,11 @@ export const BoxIllustration = styled('svg', {
         display: 'flex',
         backgroundImage: 'url("/illustration-box-desktop.svg")',
         backgroundRepeat: 'no-repeat',
-
     }
 })
 
 
-export const FAQContent = styled('main', {
+export const FAQContent = styled('section', {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -97,9 +98,41 @@ export const FAQContent = styled('main', {
         alignSelf: 'flex-end',
         mb: '68px',
         alignItems: 'start',
+        width: '45%',
     }
-
 })
+
+export const FAQItems = styled('div', {
+
+    height: '270px',
+    overflow: 'scroll',
+    '&::-webkit-scrollbar': {
+        display: 'none',
+    },
+
+    '@desktop': {
+        height: '390px',
+        overflowY: 'visible',
+        overflowX: 'hidden',
+        width: '100%',
+        '&::-webkit-scrollbar': {
+            width: '5px',
+            height: '1px',
+            borderRadius: '6px',
+            backgroundColor: '$LightGrayishBlue',
+        },
+        '&::-webkit-scrollbar-button:start:decrement &::-webkit-scrollbar-button:start:decrement': {
+            display: 'none',
+        },
+        '&::-webkit-scrollbar-thumb': {
+            backgroundColor: '$DarkGrayishBlue',
+            height: '1px',
+            borderRadius: '6px'
+        }
+    }
+})
+
+
 
 export const TitleFAQ = styled('h1', {
     textTransform: 'uppercase',
@@ -109,3 +142,4 @@ export const TitleFAQ = styled('h1', {
     mb: '24px',
 
 })
+
