@@ -20,7 +20,7 @@ export const AccordionOptionContainer = styled('div', {
 
 })
 
-export const AccordionOptionButton = styled('li', {
+export const AccordionOptionButton = styled('article', {
     listStyle: 'none',
     fontWeight: '$4',
     color: '$VeryDarkGrayishBlue',

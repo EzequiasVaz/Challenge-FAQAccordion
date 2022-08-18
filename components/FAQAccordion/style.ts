@@ -18,7 +18,6 @@ export const FAQContainer = styled('main', {
         paddingTop: '50px',
         paddingRight: '100px',
         height: '500px',
-        overflow: 'hidden'
     }
 
 })
