@@ -8,7 +8,7 @@ export const AccordionOptionContainer = styled('div', {
     width: '280px',
     cursor: 'pointer',
 
-    '&.active > li': {
+    '&.active > h2': {
         transition: 'color 0.2s ease-in-out',
         fontWeight: '$7',
         color: '$VeryDarkUnsaturatedBlue',
